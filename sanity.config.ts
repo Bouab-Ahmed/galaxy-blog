@@ -3,6 +3,7 @@ import { deskTool } from 'sanity/desk';
 import { visionTool } from '@sanity/vision';
 import { schemaTypes } from './schemas';
 import { codeInput } from '@sanity/code-input';
+import { myTheme } from './theme';
 
 const projectId = process.env.SANITY_PROJECT_ID!;
 const dataset = process.env.SANITY_DATASET!;
@@ -23,4 +24,5 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+  theme: myTheme,
 });
