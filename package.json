@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.16",
+    "@material-tailwind/react": "^1.4.2",
     "@sanity/code-input": "^4.0.0",
     "@sanity/vision": "^3.0.0",
     "@types/node": "18.14.1",
