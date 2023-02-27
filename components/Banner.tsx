@@ -2,7 +2,7 @@ import React from 'react';
 
 function Banner() {
   return (
-    <div className=' md:mt-3 mt-0 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-5 font-bold py-5 px-10 mb-10'>
+    <div className='container mx-auto md:mt-3 mt-0 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-5 font-bold'>
       <div>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1 className='text-7xl'>Galaxy's Daily Blog</h1>
