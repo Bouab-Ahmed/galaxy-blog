@@ -53,10 +53,11 @@ interface Span {
   text: string;
 }
 
-interface Category extends Base {
+type Category = Base & {
   title: string;
   description: string;
-}
+};
+
 
 interface mainImage {
   _type: 'image';

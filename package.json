@@ -13,6 +13,7 @@
     "@material-tailwind/react": "^1.4.2",
     "@sanity/code-input": "^4.0.0",
     "@sanity/vision": "^3.0.0",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
