@@ -6,6 +6,7 @@ type Props = {
   posts: Post[];
 };
 function PostList({ posts }: Props) {
+  console.log(posts);
   return (
     <div className='conainer mx-auto my-4 w-full'>
       <hr className='border-gray-100 border-1 mb-10 mt-4 w-full' />
@@ -36,7 +37,8 @@ function PostList({ posts }: Props) {
                       <div
                         key={category._id}
                         className='bg-gradient-to-br from-[#F7AB0A] via-yellow-400 to-[#E7AA56] text-center text-black px-3 py-1 rounded-xl text-sm font-semiblod h-fit'>
-                        <p>{category._type}</p>
+                        {/* @ts-ignore */}
+                        <p>{category}</p>
                       </div>
                     ))}
                   </div>

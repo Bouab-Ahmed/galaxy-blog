@@ -9,7 +9,7 @@ const query = groq`
   *[_type=='post']{
     ...,
     author->,
-    category->[]
+    "categories": categories[]->title,
   } | order(_createdAt desc)
 `;
 export default async function Home() {
