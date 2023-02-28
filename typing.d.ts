@@ -54,8 +54,8 @@ interface Span {
 }
 
 interface Category extends Base {
-  description: string;
   title: string;
+  description: string;
 }
 
 interface mainImage {
