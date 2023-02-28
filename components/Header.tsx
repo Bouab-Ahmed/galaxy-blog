@@ -38,12 +38,12 @@ function Header() {
   ];
 
   return (
-    <Navbar className='mx-auto min-w-screen-xl rounded-none shadow-sm'>
+    <Navbar className='mx-auto min-w-screen-xl rounded-none shadow-sm p-0'>
       <div className='container mx-auto flex items-center justify-between text-blue-gray-900 font-bold p-0'>
         <Link
           href='/'
           className='mr-4 cursor-pointer w-20 h-20 flex items-center justify-center'>
-          <Image src={logo} alt='logo' />
+          <Image src={logo} alt='logo' className='w-3/4 h-3/4' />
         </Link>
         <div className='flex gap-4 items-center'>
           <div className='hidden lg:block'>
@@ -64,7 +64,7 @@ function Header() {
           </div>
           <Button
             size='sm'
-            className='hidden lg:inline-block bg-gradient-to-br from-yellow-200 via-yellow-400 to-[#E7AA56] text-black hover:shadow-amber-300'>
+            className='hidden lg:inline-block bg-gradient-to-br from-[#F7AB0A] via-yellow-400 to-[#E7AA56] text-black hover:shadow-amber-300'>
             <span>Subscribe</span>
           </Button>
         </div>
