@@ -109,11 +109,6 @@ async function Post({ params: { slug } }: Props) {
             h6: (props: any) => (
               <h6 className='my-2 text-base font-bold' {...props} />
             ),
-            code: (props: any) => (
-              <pre>
-                <code>{props.node.code}</code>
-              </pre>
-            ),
             normal: (props: any) => (
               <p
                 className='text-base py-1 leading-6 text-gray-900'
@@ -140,15 +135,6 @@ async function Post({ params: { slug } }: Props) {
             ul: (props: any) => <ul className='list-item' {...props} />,
             li: (props: any) => <li className={`pb-3`} {...props} />,
             a: (props: any) => <a style={{ color: 'red' }} {...props} />,
-            // img: (props: any) => (
-            //   <div className='relative w-full h-96 m-10 mx-auto'>
-            //     <Image
-            //       src={urlFor(props.asset._ref).url()}
-            //       className='object-contain absolute inset-0 w-full h-full mx-auto'
-            //       alt=''
-            //     />
-            //   </div>
-            // ),
             mainImage: (props: any) => (
               <div className='relative w-full h-96 m-10 mx-auto'>
                 <Image {...props} alt='' className='object-contain' />
