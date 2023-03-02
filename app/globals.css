@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
+*{
+  @apply font-openSans
+}
+figure{
+  @apply flex items-center justify-center my-4
+}
+a {
+  @apply border-b-2 border-[#F7AB0A] bg-[#F7AB0A] bg-opacity-20 font-normal hover:bg-[#F7AB0A] hover:bg-opacity-40 transition-all duration-200 ease-in-out
+}
+
 @tailwind utilities;

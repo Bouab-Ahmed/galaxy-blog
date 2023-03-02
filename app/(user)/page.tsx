@@ -32,8 +32,8 @@ export default async function Home() {
 
   const posts = await client.fetch(query);
   return (
-    <>
+    <div>
       <PostList posts={posts} />
-    </>
+    </div>
   );
 }
