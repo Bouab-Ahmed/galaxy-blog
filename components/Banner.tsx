@@ -6,7 +6,7 @@ function Banner() {
       <div>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1 className='text-7xl'>Galaxy's Daily Blog</h1>
-        <h2 className='mt-5 md:mt-0'>
+        <h2 className='mt-8 md:mt-2'>
           Welcome to{' '}
           <span className='underline decoration-4 decoration-[#F7AB0A]'>
             Every Developers
