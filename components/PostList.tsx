@@ -33,14 +33,15 @@ function PostList({ posts }: Props) {
                     </p>
                   </div>
                   <div className='flex flex-col md:flex-row gap-y-2 space-x-2 items-center'>
-                    {post.categories.map((category) => (
-                      <div
-                        key={category._id}
-                        className='bg-gradient-to-br from-[#F7AB0A] via-yellow-400 to-[#E7AA56] text-center text-black px-3 py-1 rounded-xl text-sm font-semiblod h-fit'>
-                        {/* @ts-ignore */}
-                        <p>{category}</p>
-                      </div>
-                    ))}
+                    {post.categories &&
+                      post.categories.map((category) => (
+                        <div
+                          key={category._id}
+                          className='bg-gradient-to-br from-[#F7AB0A] via-yellow-400 to-[#E7AA56] text-center text-black px-3 py-1 rounded-xl text-sm font-semiblod h-fit'>
+                          {/* @ts-ignore */}
+                          <p>{category}</p>
+                        </div>
+                      ))}
                   </div>
                 </div>
               </div>
