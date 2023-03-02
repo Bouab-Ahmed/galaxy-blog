@@ -10,7 +10,7 @@ function ClientSideRoute({
   route: string;
 }) {
   return (
-    <Link href={route}>
+    <Link href={route} className='border-0 bg-transparent hover:bg-transparent'>
       <>
         {children}
         <Button

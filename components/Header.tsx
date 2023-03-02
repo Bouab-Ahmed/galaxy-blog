@@ -42,7 +42,7 @@ function Header() {
       <div className='container mx-auto flex items-center justify-between text-blue-gray-900 font-bold p-0'>
         <Link
           href='/'
-          className='mr-4 cursor-pointer w-20 h-20 flex items-center justify-center'>
+          className='mr-4 cursor-pointer w-20 h-20 flex items-center justify-center border-0 bg-transparent hover:bg-transparent'>
           <Image src={logo} alt='logo' className='w-3/4 h-3/4' />
         </Link>
         <div className='flex gap-4 items-center'>
@@ -55,7 +55,9 @@ function Header() {
                   variant='small'
                   color='blue-gray'
                   className='p-1 font-bold'>
-                  <Link href={item.href} className='flex items-center'>
+                  <Link
+                    href={item.href}
+                    className='flex items-center border-0 bg-transparent hover:bg-transparent'>
                     {item.name}
                   </Link>
                 </Typography>
@@ -113,7 +115,9 @@ function Header() {
                 variant='small'
                 color='blue-gray'
                 className='p-1 font-bold'>
-                <Link href={item.href} className='flex items-center'>
+                <Link
+                  href={item.href}
+                  className='flex items-center border-0 bg-transparent hover:bg-transparent'>
                   {item.name}
                 </Link>
               </Typography>
