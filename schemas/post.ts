@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity';
 
 export default defineType({
   name: 'post',
@@ -8,12 +8,6 @@ export default defineType({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'string',
-    }),
-    defineField({
-      name: 'description',
-      description: 'Enter a short description of the post',
-      title: 'Description',
       type: 'string',
     }),
     defineField({
@@ -30,6 +24,12 @@ export default defineType({
       title: 'Author',
       type: 'reference',
       to: { type: 'author' },
+    }),
+    defineField({
+      name: 'description',
+      description: 'Enter a short description of the post',
+      title: 'Description',
+      type: 'string',
     }),
     defineField({
       name: 'mainImage',
@@ -69,3 +69,5 @@ export default defineType({
     },
   },
 });
+
+// watch?v=5pQsl9u_10M

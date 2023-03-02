@@ -11,4 +11,7 @@ a {
   @apply border-b-2 border-[#F7AB0A] bg-[#F7AB0A] bg-opacity-20 font-normal hover:bg-[#F7AB0A] hover:bg-opacity-40 transition-all duration-200 ease-in-out
 }
 
+ul, ol {
+  @apply list-disc list-inside px-10
+}
 @tailwind utilities;

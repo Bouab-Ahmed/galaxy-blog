@@ -1,4 +1,5 @@
-import RichTextComponent from '@/components/RichTextComponent';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { client } from '@/lib/sanity.client';
 import urlFor from '@/lib/urlFor';
 import PortableText from 'react-portable-text';
@@ -109,12 +110,18 @@ async function Post({ params: { slug } }: Props) {
             h6: (props: any) => (
               <h6 className='my-2 text-base font-bold' {...props} />
             ),
-            normal: (props: any) => (
-              <p
-                className='text-base py-1 leading-6 text-gray-900'
-                {...props}
-              />
+            code: (props: any) => (
+              <pre className='my-2 text-base font-normal leading-6 text-gray-900'>
+                <code {...props} />
+              </pre>
             ),
+            normal: (props: any) => {
+              return props.children[0] === 'code' ? (
+                <code {...props} />
+              ) : (
+                <p className='my-2 text-base font-normal' {...props} />
+              );
+            },
             strong: (props: any) => (
               <strong className='font-bold text-black' {...props} />
             ),
