@@ -11,7 +11,8 @@
   "dependencies": {
     "@heroicons/react": "^2.0.16",
     "@material-tailwind/react": "^1.4.2",
-    "@sanity/code-input": "^4.0.0",
+    "@portabletext/react": "^2.0.2",
+    "@sanity/code-input": "^4.1.0",
     "@sanity/vision": "^3.0.0",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "18.14.1",
@@ -23,6 +24,7 @@
     "next-sanity": "^4.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-portable-text": "^0.6.0",
     "sanity": "^3.0.0",
     "styled-components": "^5.2.0",
     "typescript": "4.9.5"
