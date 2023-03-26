@@ -1,5 +1,6 @@
 import Banner from '@/components/Banner';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import '../globals.css';
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({
         <Header />
         <Banner />
         {children}
+        <Footer />
       </body>
     </html>
   );
